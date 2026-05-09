@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MBzStudios — Opnamestudio · Daghuur · Gitaarles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --mbz-sunset-orange:  #E87A20;
+      --mbz-studio-black:   #1A1A1A;
+      --mbz-warm-cream:     #F0E4CC;
+      --mbz-deep-purple:    #5B2D6E;
+      --mbz-burnt-orange:   #C45A20;
+      --mbz-dusk-purple:    #3D1F4A;
+      --mbz-golden-hour:    #F5A623;
+      --mbz-gradient-sunset: linear-gradient(135deg, #E87A20, #5B2D6E);
+      --mbz-font-primary:   'Montserrat', Arial, sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--mbz-font-primary);
+      color: var(--mbz-warm-cream);
+      background: var(--mbz-studio-black);
+    }
+
+    /* NAV */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: rgba(26, 26, 26, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(232, 122, 32, 0.2);
+    }
+
+    .nav-logo {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: var(--mbz-warm-cream);
+      text-decoration: none;
+    }
+
+    .nav-logo span { color: var(--mbz-sunset-orange); }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--mbz-warm-cream);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover { color: var(--mbz-sunset-orange); }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+      background:
+        radial-gradient(ellipse at 30% 80%, rgba(91, 45, 110, 0.3) 0%, transparent 60%),
+        radial-gradient(ellipse at 70% 20%, rgba(232, 122, 32, 0.15) 0%, transparent 50%),
+        var(--mbz-studio-black);
+    }
+
+    .hero-logo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: var(--mbz-gradient-sunset);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 60px rgba(232, 122, 32, 0.3);
+    }
+
+    .hero-logo-text {
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--mbz-warm-cream);
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 .accent {
+      background: var(--mbz-gradient-sunset);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: rgba(240, 228, 204, 0.7);
+      max-width: 600px;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      font-family: var(--mbz-font-primary);
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s;
+      cursor: pointer;
+      border: none;
+    }
+
+    .btn-primary {
+      background: var(--mbz-sunset-orange);
+      color: var(--mbz-studio-black);
+    }
+
+    .btn-primary:hover {
+      background: var(--mbz-burnt-orange);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(232, 122, 32, 0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--mbz-warm-cream);
+      border: 2px solid rgba(240, 228, 204, 0.3);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--mbz-sunset-orange);
+      color: var(--mbz-sunset-orange);
+    }
+
+    /* WAVE DIVIDER */
+    .wave-divider {
+      width: 120px;
+      display: flex;
+      gap: 3px;
+      justify-content: center;
+      align-items: end;
+      height: 30px;
+      margin: 0 auto;
+    }
+
+    .wave-divider .bar {
+      width: 3px;
+      border-radius: 2px;
+      background: var(--mbz-sunset-orange);
+      animation: wave 1.2s ease-in-out infinite;
+    }
+
+    @keyframes wave {
+      0%, 100% { height: 8px; opacity: 0.4; }
+      50% { height: 24px; opacity: 1; }
+    }
+
+    .wave-divider .bar:nth-child(1) { animation-delay: 0s; }
+    .wave-divider .bar:nth-child(2) { animation-delay: 0.1s; }
+    .wave-divider .bar:nth-child(3) { animation-delay: 0.2s; }
+    .wave-divider .bar:nth-child(4) { animation-delay: 0.3s; }
+    .wave-divider .bar:nth-child(5) { animation-delay: 0.4s; }
+    .wave-divider .bar:nth-child(6) { animation-delay: 0.5s; }
+    .wave-divider .bar:nth-child(7) { animation-delay: 0.6s; }
+    .wave-divider .bar:nth-child(8) { animation-delay: 0.7s; }
+    .wave-divider .bar:nth-child(9) { animation-delay: 0.6s; }
+    .wave-divider .bar:nth-child(10) { animation-delay: 0.5s; }
+    .wave-divider .bar:nth-child(11) { animation-delay: 0.4s; }
+    .wave-divider .bar:nth-child(12) { animation-delay: 0.3s; }
+    .wave-divider .bar:nth-child(13) { animation-delay: 0.2s; }
+
+    /* DIENSTEN */
+    .services {
+      padding: 6rem 2rem;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-header h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .section-header p {
+      color: rgba(240, 228, 204, 0.6);
+      max-width: 500px;
+      margin: 1.5rem auto 0;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .service-card {
+      background: rgba(240, 228, 204, 0.05);
+      border: 1px solid rgba(240, 228, 204, 0.1);
+      border-radius: 16px;
+      padding: 2.5rem;
+      transition: all 0.4s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+    }
+
+    .service-card.opnames::before { background: var(--mbz-sunset-orange); }
+    .service-card.daghuur::before { background: var(--mbz-golden-hour); }
+    .service-card.gitaarles::before { background: var(--mbz-deep-purple); }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(240, 228, 204, 0.2);
+      background: rgba(240, 228, 204, 0.08);
+    }
+
+    .service-icon {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-card h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+
+    .service-card.opnames h3 { color: var(--mbz-sunset-orange); }
+    .service-card.daghuur h3 { color: var(--mbz-golden-hour); }
+    .service-card.gitaarles h3 { color: var(--mbz-deep-purple); }
+
+    .service-card p {
+      color: rgba(240, 228, 204, 0.7);
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-tag {
+      display: inline-block;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .service-card.opnames .service-tag {
+      background: rgba(232, 122, 32, 0.15);
+      color: var(--mbz-sunset-orange);
+    }
+
+    .service-card.daghuur .service-tag {
+      background: rgba(245, 166, 35, 0.15);
+      color: var(--mbz-golden-hour);
+    }
+
+    .service-card.gitaarles .service-tag {
+      background: rgba(91, 45, 110, 0.25);
+      color: #A67BC5;
+    }
+
+    /* OVER ONS */
+    .about {
+      padding: 6rem 2rem;
+      background:
+        radial-gradient(ellipse at 80% 50%, rgba(91, 45, 110, 0.15) 0%, transparent 60%),
+        rgba(240, 228, 204, 0.03);
+    }
+
+    .about-content {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .about-text h2 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .about-text h2 .accent { color: var(--mbz-sunset-orange); }
+
+    .about-text p {
+      color: rgba(240, 228, 204, 0.7);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .about-visual {
+      aspect-ratio: 1;
+      border-radius: 20px;
+      background: var(--mbz-gradient-sunset);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-visual::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 30% 70%, rgba(26, 26, 26, 0.4), transparent);
+    }
+
+    /* CONTACT */
+    .contact {
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .contact p {
+      color: rgba(240, 228, 204, 0.6);
+      margin-bottom: 2.5rem;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact-methods {
+      display: flex;
+      gap: 2rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1.5rem;
+      background: rgba(240, 228, 204, 0.05);
+      border: 1px solid rgba(240, 228, 204, 0.1);
+      border-radius: 12px;
+      color: var(--mbz-warm-cream);
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+
+    .contact-item:hover {
+      border-color: var(--mbz-sunset-orange);
+      background: rgba(232, 122, 32, 0.1);
+    }
+
+    .contact-item .icon { font-size: 1.3rem; }
+
+    /* FOOTER */
+    footer {
+      padding: 3rem 2rem;
+      border-top: 1px solid rgba(240, 228, 204, 0.1);
+      text-align: center;
+    }
+
+    .footer-brand {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-brand span { color: var(--mbz-sunset-orange); }
+
+    footer p {
+      color: rgba(240, 228, 204, 0.4);
+      font-size: 0.85rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .about-content { grid-template-columns: 1fr; gap: 2rem; }
+      .services-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">MBz<span>Studios</span></a>
+    <ul class="nav-links">
+      <li><a href="#diensten">Diensten</a></li>
+      <li><a href="#over">Over ons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-logo">
+      <span class="hero-logo-text">MBz</span>
+    </div>
+    <h1>Jouw muziek.<br><span class="accent">Onze studio.</span></h1>
+    <p>Professionele opnames, studiodaghuur en gitaarles — alles onder één dak in een creatieve, warme omgeving.</p>
+    <div class="hero-cta">
+      <a href="#contact" class="btn btn-primary">Neem contact op</a>
+      <a href="#diensten" class="btn btn-outline">Bekijk diensten</a>
+    </div>
+  </section>
+
+  <!-- DIENSTEN -->
+  <section class="services" id="diensten">
+    <div class="section-header">
+      <div class="wave-divider">
+        <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+        <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+        <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+        <div class="bar"></div><div class="bar"></div><div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <h2 style="margin-top: 1.5rem;">Wat we doen</h2>
+      <p>Drie diensten, één passie: muziek op z'n best laten klinken.</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Opnames -->
+      <div class="service-card opnames">
+        <div class="service-icon">🎙️</div>
+        <h3>Professionele Opnames</h3>
+        <p>Van demo tot album — wij leveren de klank die jouw muziek verdient. Opname, mixing en mastering door ervaren engineers.</p>
+        <span class="service-tag">Vanaf dagproject</span>
+      </div>
+
+      <!-- Daghuur -->
+      <div class="service-card daghuur">
+        <div class="service-icon">🥁</div>
+        <h3>Studiodaghuur</h3>
+        <p>Boek de studio voor een dag en werk aan je eigen project. Volledig uitgeruste ruimte, jij bepaalt het tempo.</p>
+        <span class="service-tag">Halve of hele dag</span>
+      </div>
+
+      <!-- Gitaarles -->
+      <div class="service-card gitaarles">
+        <div class="service-icon">🎸</div>
+        <h3>Gitaarles bij Erwin</h3>
+        <p>Leer gitaar spelen in een echte studio-omgeving. Van beginner tot gevorderd, op jouw niveau en jouw tempo.</p>
+        <span class="service-tag">Proefles mogelijk</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVER ONS -->
+  <section class="about" id="over">
+    <div class="about-content">
+      <div class="about-text">
+        <h2>Meer dan een <span class="accent">ruimte</span></h2>
+        <p>MBzStudios is geboren uit passie voor muziek en geluid. We geloven dat elke muzikant — van de beginnende gitarist tot de doorgewinterde producer — een plek verdient waar creativiteit centraal staat.</p>
+        <p>Geen fabriek, geen haast. Gewoon een warme studio waar je muziek tot leven komt.</p>
+      </div>
+      <div class="about-visual">
+        🎵
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <h2>Laten we praten</h2>
+    <p>Benieuwd wat MBzStudios voor jou kan betekenen? Neem vrijblijvend contact op.</p>
+    <div class="contact-methods">
+      <a href="mailto:info@mbzstudios.nl" class="contact-item">
+        <span class="icon">✉️</span>
+        <span>info@mbzstudios.nl</span>
+      </a>
+      <a href="tel:+31612345678" class="contact-item">
+        <span class="icon">📞</span>
+        <span>06 - 1234 5678</span>
+      </a>
+      <a href="#" class="contact-item">
+        <span class="icon">📍</span>
+        <span>Locatie</span>
+      </a>
+    </div>
+    <a href="mailto:info@mbzstudios.nl" class="btn btn-primary">Stuur een bericht</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-brand">MBz<span>Studios</span></div>
+    <p>&copy; 2026 MBzStudios — Opnamestudio · Daghuur · Gitaarles</p>
+  </footer>
+
+</body>
+</html>
