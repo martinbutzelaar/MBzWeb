@@ -1,0 +1,126 @@
+# Software — Studio MBz
+
+## DAWs & Recording Hosts
+- **Steinberg Cubase 15.0.5** (productiehoofd-DAW; ook 14, 13, 12, 11, 9.5 beschikbaar)
+- **Reason Studios Reason 12.7.4d3** (rack-instrumenten, host of als VST in Cubase)
+- **Reason 9 (9.5.4d5)** (legacy)
+- **Steinberg SpectraLayers 12.0.40** (spectraal editing / restoration)
+
+## Drums & Drum-samplers
+- **FXpansion BFD3 3.5.0** + Core Library
+  - Expansions: 8 Bit Kit · Jazz & Funk · Jazz Noir · JM Essentials Vol. 1 · Metal Snares · Modern Retro · Oak Custom · Vintage Recording Techniques · Wooden Snares
+- **Steven Slate Drums 5 (SSDSampler5)** + sample library
+- **Steven Slate Trigger 2 (2.0.6)** (drum replacement)
+- **Steinberg Groove Agent SE 6.0.10**
+
+## Virtual Instruments / Synths
+- **Steinberg HALion Sonic 7.1.40** + HALion Sonic SE 3.5
+- **Steinberg Padshop 2.2.0**
+- **Steinberg Retrologue 2.4.0**
+- **Spectrasonics Trilian 1.6.6d** (bass)
+- **Modartt Pianoteq 6.7.3**
+- **Reason Rack Plugin 12.7.4** (alle Reason-instrumenten als VST)
+- **D16 Group Nepheton 1.5.1** (TR-808 emulatie)
+
+## EQ
+- **FabFilter Pro-Q 4.02** (+ Pro-Q 3.25, Pro-Q 2.27)
+- **iZotope Ozone 11 Equalizer / Dynamic EQ / Match EQ / Vintage EQ**
+- **Plugin Alliance Lindell 80 Channel 1.0.6**
+
+## Compressie & Dynamics
+- **FabFilter Pro-C 2.19** (compressor)
+- **FabFilter Pro-G 1.33** (gate)
+- **FabFilter Pro-DS 1.23** (de-esser)
+- **FabFilter Pro-MB 1.30** (multiband)
+- **FabFilter Pro-L 2.23** (limiter)
+- **Slate Digital Virtual Buss Compressors** (FG-Grey, FG-MU, FG-Red, Rack — alle vier)
+- **Plugin Alliance elysia alpha compressor 1.17.1** (mix + master)
+- **Plugin Alliance Lindell 80 Bus 1.0.6**
+- **Eiosis E2Deesser 1.1.10**
+- **oeksound soothe2 1.2.2** (resonance suppressor)
+- **iZotope Ozone 11 Dynamics / Vintage Compressor / Vintage Limiter / Maximizer / Stabilizer**
+- **Black Salt Audio Silencer 1.0.8** + Low Control 1.3.2
+- **XFER OTT 1.3.7**
+
+## Reverb
+- **FabFilter Pro-R 2.03** (+ Pro-R 1.17)
+- **Slate Digital VerbSuite Classics 1.1.11**
+- **Valhalla DSP VintageVerb 2.2.0**
+- **Valhalla DSP Supermassive 2.0.0**
+- **Voxengo OldSkoolVerb 2.13**
+- **Wave Arts MasterVerb 6.19**
+
+## Delay / Modulation
+- **FabFilter Timeless 3.07** (+ Timeless 2.38) — delay
+- **FabFilter Volcano 3.06** — filter
+- **Cableguys ShaperBox 3.6.1**
+- **Valhalla DSP FreqEcho 1.2.0**
+- **Valhalla DSP SpaceModulator 1.1.6**
+- **D16 Group Repeater 1.2.5**
+- **Soundtoys EchoBoy / EchoBoy Jr / Crystallizer / FilterFreak 1+2 / Tremolator / PhaseMistress / PanMan / MicroShift**
+
+## Saturation / Distortion / Character
+- **FabFilter Saturn 2.10** (+ Saturn 1.28)
+- **Slate Digital Virtual Tape Machines 1.2.10**
+- **Soundtoys Decapitator / Radiator / SieQ / DevilLoc / DevilLocDeluxe / PrimalTap / SuperPlate / SpaceBlender**
+- **D16 Group Devastor 1.3.1**
+- **Voxengo Boogex 2.0.1**
+- **iZotope Ozone 11 Vintage Tape / Exciter / Imager / Impact**
+
+## Mastering & Metering
+- **iZotope Ozone 11 Advanced** (volledig: Maximizer, Match EQ, Spectral Shaper, Master Rebalance, Low End Focus, Clarity, Stabilizer)
+- **iZotope Meter Tap 3 1.0.4**
+- **IK Multimedia T-RackS 24 v2.0.1**
+- **Wave Arts FinalPlug / MultiDynamics / Panorama / TrackPlug 6.19**
+- **Plugin Alliance ADPTR MetricAB 1.4.1** + ADPTR StreamLiner 1.1.0
+- **SIR Audio Tools StandardCLIP**
+- **Voxengo SPAN 2.8**
+
+## Vocaal & Pitch
+- **Voxengo Voxformer 2.23** (vocal channel strip — favoriet hier zo te zien)
+- **Yamaha OmnivocalBeta 1.0.4**
+- **Soundtoys LittleAlterBoy / LittleMicroShift**
+- **iZotope Ozone 11 — Vocal modules**
+
+## Channel Strips & Consoles
+- **Slate Digital Virtual Mix Rack 3.3.3** + VMR Complete Bundle
+- **Slate Digital Infinity Bass 1.0.2**
+- **Slate Digital VSX 1.0** (referentie-monitoring)
+- **Soundtoys Effect Rack**
+
+## Universal Audio (UAD Native)
+- Pultec EQP-1A · Pultec MEQ-5 · Pultec HLF-3C
+- Teletronix LA-2A (Gray + Silver) · LA-2
+- Galaxy Tape Echo · Oxide Tape · Pure Plate
+- Century Tube Channel Strip · PolyMax synth
+
+## Guitar / Amp Simulation
+- **Neural DSP Archetype Cory Wong 1.0.0**
+- **Neural DSP Archetype John Mayer X**
+- **PositiveGrid BIAS FX 2 (2.7.0)** + BIAS Pedal
+- **PositiveGrid BIAS Amp 2** (Modules + Globals)
+
+## Drum/Sample Triggers / Hosts
+- **Reason Studios ReCycle 2.0** (REX-creatie)
+- **Steven Slate Trigger 2** (zie ook Drums)
+
+## Hulp / Utilities (waarschijnlijk niet boeiend voor klanten)
+- Steinberg Library Manager · Activation Manager · Download Assistant · MediaBay · Install Assistant
+- eLicenser Control · Plugin Alliance Installation Manager
+- UA Connect · Slate Digital Connect · Waves Central
+- Steinberg ASIO drivers · Generic Lower Latency ASIO · CMC drivers
+- Reason Authorizer · Reason Companion
+- Output Co-Producer 1.3.0
+
+## AI / Modern Tools
+- **Output Co-Producer 1.3.0**
+- **Fadr Stems 2.0.0** + SynthGPT 2 (v2.0.6)
+- **Yamaha OmnivocalBeta 1.0.4**
+
+## Waves
+- **WaveShell 15.5.79** (welke specifieke Waves-plugins eronder hangen weet ik niet uit de DLL — daar moet ik in de license-bestanden van Waves Central kijken om dat per plugin uit te splitsen)
+
+---
+
+
+
